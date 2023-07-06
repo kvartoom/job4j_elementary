@@ -15,7 +15,7 @@ public class MultipleSwitchWeek {
     }
 
     public static void main(String[] args) {
-        int result = numberOfDay("Tuesday");
+        int result = numberOfDay("Понедельник");
         System.out.println(result);
     }
 }
