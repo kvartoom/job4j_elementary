@@ -9,10 +9,10 @@ public class ArrayChar {
             maxLength = pref.length;
         }
         for (int index = 0; index < maxLength / 2; index++) {
-                if (word[index] != pref[index]) {
-                    result = false;
-                    break;
-                }
+            if (word[index] != pref[index]) {
+                result = false;
+                break;
+            }
         }
         return result;
     }
