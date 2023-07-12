@@ -4,7 +4,7 @@ public class EndsWith {
 
     public static boolean endsWith(char[] word, char[] pref) {
         boolean result = true;
-        for (int index = 0; index < (word.length - 1 - index); index++) {
+        for (int index = 0; index < pref.length; index++) {
             if (word[word.length - 1 - index] != pref[pref.length - 1 - index]) {
                 result = false;
                 break;
