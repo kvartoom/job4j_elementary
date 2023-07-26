@@ -9,12 +9,13 @@ public class StringUsage {
             if (input.charAt(i) == symbol) {
                 counter++;
             } else {
-                result = result + symbol + counter;
+                result =  result + symbol + (counter == 1 ? "" : counter);
                 symbol = input.charAt(i);
                 counter = 1;
             }
         }
-        return result + symbol + counter;
+        result =  result + symbol + (counter == 1 ? "" : counter);
+        return result;
     }
 }
 
